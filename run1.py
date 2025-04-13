@@ -51,6 +51,7 @@ elif app_mode =='Prediction':
     CoapplicantIncome=st.sidebar.slider('CoapplicantIncome',0,10000,0,)
     LoanAmount = int(st.sidebar.slider('LoanAmount in K$', 9, 700, 200))
     Loan_Amount_Term = int(st.sidebar.selectbox('Loan_Amount_Term', (12, 36, 60, 84, 120, 180, 240, 300, 360)))
+    Credit_History = int(Credit_History)
     Credit_History=st.sidebar.radio('Credit_History',(0.0,1.0))
     Property_Area=st.sidebar.radio('Property_Area',tuple(prop.keys()))
 
