@@ -49,8 +49,8 @@ elif app_mode =='Prediction':
     Education=st.sidebar.radio('Education',tuple(edu.keys()))
     ApplicantIncome=st.sidebar.slider('ApplicantIncome',0,10000,0,)
     CoapplicantIncome=st.sidebar.slider('CoapplicantIncome',0,10000,0,)
-    LoanAmount=st.sidebar.slider('LoanAmount in K$',9.0,700.0,200.0)
-    Loan_Amount_Term=st.sidebar.selectbox('Loan_Amount_Term',(12.0,36.0,60.0,84.0,120.0,180.0,240.0,300.0,360.0))
+    LoanAmount = int(st.sidebar.slider('LoanAmount in K$', 9, 700, 200))
+    Loan_Amount_Term = int(st.sidebar.selectbox('Loan_Amount_Term', (12, 36, 60, 84, 120, 180, 240, 300, 360)))
     Credit_History=st.sidebar.radio('Credit_History',(0.0,1.0))
     Property_Area=st.sidebar.radio('Property_Area',tuple(prop.keys()))
 
