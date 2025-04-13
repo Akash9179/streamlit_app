@@ -47,12 +47,12 @@ elif app_mode =='Prediction':
     Self_Employed=st.sidebar.radio('Self Employed',tuple(feature_dict.keys()))
     Dependents=st.sidebar.radio('Dependents',options=['0','1' , '2' , '3+'])
     Education=st.sidebar.radio('Education',tuple(edu.keys()))
-    ApplicantIncome=st.sidebar.slider('ApplicantIncome',0,10000,0,)
-    CoapplicantIncome=st.sidebar.slider('CoapplicantIncome',0,10000,0,)
+    ApplicantIncome = int(st.sidebar.slider('ApplicantIncome', 0, 10000, 0))
+    CoapplicantIncome = int(st.sidebar.slider('CoapplicantIncome', 0, 10000, 0))
     LoanAmount = int(st.sidebar.slider('LoanAmount in K$', 9, 700, 200))
     Loan_Amount_Term = int(st.sidebar.selectbox('Loan_Amount_Term', (12, 36, 60, 84, 120, 180, 240, 300, 360)))
     Credit_History = int(Credit_History)
-    Credit_History=st.sidebar.radio('Credit_History',(0.0,1.0))
+    Credit_History = int(st.sidebar.radio('Credit_History', (0, 1)))
     Property_Area=st.sidebar.radio('Property_Area',tuple(prop.keys()))
 
 
