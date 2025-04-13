@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 import pickle
 import base64
+import os
+os.environ["STREAMLIT_DISABLE_WATCHDOG_WARNINGS"] = "true"
+os.environ["WATCHDOG_IGNORE_DIRECTORIES"] = "true"
 
 
 
