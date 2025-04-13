@@ -5,3 +5,4 @@ matplotlib
 streamlit==0.76.0
 Pillow
 seaborn==0.12.2
+protobuf==3.20.3
